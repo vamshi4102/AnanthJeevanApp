@@ -5,7 +5,7 @@ const DeviceWidth = Dimensions.get('window').width;
 const DeviceHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.Secondary,
+    // backgroundColor: colors.Secondary,
     flex: 1,
     alignItems: 'center',
   },
