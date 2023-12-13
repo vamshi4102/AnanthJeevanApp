@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     marginVertical: 25,
     fontSize: fonts.FontHeadding,
+    color:colors.InputColor
   },
   password: {
     width: DeviceWidth * 0.8,
@@ -36,6 +37,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingHorizontal: 15,
     fontSize: fonts.FontHeadding,
+    color:colors.InputColor
   },
   password_container: {
     flexDirection: 'row',
@@ -44,6 +46,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 15,
     top: 15,
+
   },
   remember_row: {
     flexDirection: 'row',
@@ -54,6 +57,7 @@ const styles = StyleSheet.create({
   remember_text: {
     fontFamily: fonts.RegularFont,
     fontSize: fonts.FontHeadding,
+    color:colors.white
   },
   remember_checkbox: {
     marginLeft: 10,
@@ -68,6 +72,7 @@ const styles = StyleSheet.create({
   forgot_password_text: {
     fontFamily: fonts.RegularFont,
     fontSize: fonts.FontSubHeadding,
+    color:colors.white
   },
   SignIn: {
     paddingHorizontal: 10,
@@ -106,7 +111,8 @@ const styles = StyleSheet.create({
   signup_text: {
     fontFamily: fonts.RegularFont,
     fontSize: fonts.FontHeadding,
-    textDecorationLine:'underline'
+    textDecorationLine:'underline',
+    color:colors.white
   },
 });
 

@@ -1,19 +1,41 @@
 import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './styles';
 import CheckBox from '@react-native-community/checkbox';
-// import  from 'react-native-heroicons'
+import {EyeIcon, EyeSlashIcon} from 'react-native-heroicons/solid';
+import colors from '../../assets/colors';
 const LoginScreen = () => {
+  const [ShowPassword, setShowPassword] = useState(false);
+  const HandleShowPassword = () => {
+    setShowPassword(!ShowPassword);
+  };
   return (
     <View style={styles.container}>
       <Image
         source={require('../../assets/images/aj_logo.png')}
         style={styles.logo}
       />
-      <TextInput style={styles.input} placeholder="Email" />
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        placeholderTextColor={colors.white}
+      />
       <View style={styles.password_container}>
-        <TextInput style={styles.password} placeholder="Password" />
-        <Text style={styles.eye_icon}>eye</Text>
+        <TextInput
+          style={styles.password}
+          placeholder="Password"
+          placeholderTextColor={colors.white}
+        />
+        <TouchableOpacity onPress={HandleShowPassword}>
+          {ShowPassword ? (
+            <EyeSlashIcon
+              size={20}
+              color={colors.white}
+            />
+          ) : (
+            <EyeIcon  size={20} color={colors.white} />
+          )}
+        </TouchableOpacity>
       </View>
       <View style={styles.remember_row}>
         <Text style={styles.remember_text}>Remember Me</Text>
@@ -32,7 +54,7 @@ const LoginScreen = () => {
         </TouchableOpacity>
       </View>
       <TouchableOpacity style={styles.login_gmail_row}>
-        <Image 
+        <Image
           source={require('../../assets/images/google_logo.png')}
           style={styles.google_logo}
         />
