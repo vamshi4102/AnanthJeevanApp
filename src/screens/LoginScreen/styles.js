@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.RegularFont,
     borderRadius: 12,
     paddingHorizontal: 15,
-    marginVertical: 25,
+    marginTop: 25,
     fontSize: fonts.FontHeadding,
     color:colors.InputColor
   },
@@ -41,6 +41,8 @@ const styles = StyleSheet.create({
   },
   password_container: {
     flexDirection: 'row',
+
+    marginTop:25,
   },
   eye_icon: {
     position: 'absolute',
@@ -77,7 +79,7 @@ const styles = StyleSheet.create({
   SignIn: {
     paddingHorizontal: 10,
     paddingVertical: 10,
-    backgroundColor: colors.white,
+    backgroundColor: colors.buttonColor,
     marginLeft: 25,
     borderRadius: 25,
   },
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
   },
   login_gmail_row: {
     flexDirection: 'row',
-    backgroundColor: colors.white,
+    backgroundColor: colors.buttonColor,
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 12,
@@ -114,6 +116,25 @@ const styles = StyleSheet.create({
     textDecorationLine:'underline',
     color:colors.white
   },
+  response:{
+    width:DeviceWidth*0.8,
+    paddingVertical:10,
+    marginVertical:10,
+    alignItems:'center',
+    borderRadius:5
+  },
+message:{
+  fontFamily: fonts.RegularFont,
+  fontSize: fonts.FontBody,
+  color:colors.white
+},
+error:{
+  color:colors.red,
+  fontFamily: fonts.BoldFont,
+  fontSize: fonts.FontBody,
+  alignSelf:'flex-start',
+  marginTop:5
+}
 });
 
 export default styles;

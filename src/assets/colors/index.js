@@ -2,6 +2,7 @@ export default {
     Primary:'#8007A6',
     Secondary:'#DFC7FB',
     InputColor:'#ECD3F3',
+    buttonColor:'#FBD9D5',
     black:'#000',
     white:'#fff',
      //----------------
